@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family:sans-serif;
+}
+
+header{
+    background-color: rgb(58, 44, 138);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    transition: 0.5s ease;
+    position: fixed;
+}
+header .brand{
+    color:white;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 100px;
+
+}
+header .navigation{
+    position: relative;
+}
+header .navigation .navigation-items a{
+    position:relative;
+    color: #000;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-bottom: 3px;
+    transition: 0.3s ease;
+    color: white;
+
+}
+header .navigation .navigation-items a:before
+{
+    content: '';
+    position: absolute;
+    background:rgb(246, 248, 244);
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0; 
+    margin:-5px;
+    transition: 0.3s ease;
+   
+}
+header .navigation .navigation-items a:hover:before
+{
+    width: 100%;
+}
+
+
+.gallery {
+    white-space: 2px;
+    width: 290px;
+    margin: 12px;
+    border: 1px solid #ccc;
+    float: left;
+    margin: 4px 6px;
+    /* width: 180px; */
+  }
+  
+.gallery:hover {
+    border: 1px solid #777;
+  } 
+  
+.gallery img {
+    /* width: 100%; */
+    width: 290px;
+    height: 250px;
+    /* height: auto; */
+  }
+  
+.desc {
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+    width: 290px;
+  } 
+  .desc:hover{
+    color: blue;
+    cursor: pointer;
+  }
+
+.container{
+    max-width: 100%;
+    margin:auto;
+    background-color: #0000;
+    overflow: auto;
+}
+
+p{
+  color:#000;
+  font-size:1em;
+  font-weight: 200px;
+}
+.Travel{
+  color: rgb(126, 0, 8);
+  margin:50px 30px;
+  font-size: 2em;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 100px;
+}
+.total{
+  background-image:url(./back.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title{
+  color: black;
+  text-decoration: bold;
+  text-decoration: solid;
+}
+.para{
+  margin:20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: justify;
+}
